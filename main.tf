@@ -1,5 +1,5 @@
 terraform {
-    required_version = "~> 1.14.0" // added latest version
+    required_version = "~> 1.14.2" // added latest version
     required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -13,7 +13,7 @@ provider "aws" {
         #profile = "default"
 	}
 
-resource "aws_instance" "sulaiinfra1" {
+resource "aws_instance" "sulaiinfra" {
 	ami = "ami-0c2b8ca1dad447f8a" 
-	instance_type = "t2.nano"
+	instance_type = "t2.micro"
 }
